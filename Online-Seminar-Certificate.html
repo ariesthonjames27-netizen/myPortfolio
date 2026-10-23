@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Seminar Certificates | My Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #f5f7fc;
+      --surface: #ffffff;
+      --text: #17233f;
+      --muted: #68748b;
+      --accent: #465ee8;
+      --accent-dark: #3448c5;
+      --line: #e4e9f4;
+      --shadow: 0 12px 32px rgba(25, 42, 85, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+      padding: 34px 0 60px;
+    }
+
+    .back {
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+
+    .back:hover {
+      color: var(--accent-dark);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .header {
+      margin-bottom: 32px;
+    }
+
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .certificate {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      min-width: 0;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .certificate:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 38px rgba(25, 42, 85, 0.12);
+    }
+
+    .file-icon {
+      flex-shrink: 0;
+      width: 74px;
+      height: 88px;
+      border-radius: 14px;
+      background: #eef1ff;
+      color: var(--accent);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .file-icon svg {
+      width: 34px;
+      height: 34px;
+      margin-bottom: 5px;
+    }
+
+    .file-icon span {
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .details {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .number {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0 0 4px;
+    }
+
+    .certificate h2 {
+      font-size: 17px;
+      line-height: 1.4;
+      margin: 0 0 7px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 15px;
+    }
+
+    .open-pdf {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--accent);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+
+    .open-pdf:hover {
+      background: var(--accent-dark);
+    }
+
+    .open-pdf svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .note {
+      margin-top: 25px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      .certificates {
+        grid-template-columns: 1fr;
+      }
+
+      .certificate {
+        padding: 20px;
+      }
+
+      .container {
+        padding-top: 24px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .certificate {
+        align-items: flex-start;
+        gap: 12px;
+        padding: 15px;
+      }
+
+      .file-icon {
+        width: 58px;
+        height: 72px;
+      }
+
+      .open-pdf {
+        padding: 9px 11px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <a class="back" href="index.html#certificates">
+      &larr; Back to Portfolio
+    </a>
+
+    <header class="header">
+      <p class="eyebrow">Achievements &amp; Learning</p>
+      <h1>My Online Seminar Certificates</h1>
+      <p class="subtitle">
+        Explore my completed Online Seminar courses. Select View Certificate
+        to open a certificate PDF in a new browser tab.
+      </p>
+    </header>
+
+    <section class="certificates" aria-label="Online Seminar certificates">
+
+      <article class="certificate">
+        <div class<article class="certificate">
+        <div class="file-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.7">
+            <path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/>
+            <path d="M14 3v6h5M8 14h8M8 17h8"/>
+          </svg>
+          <span>PDF FILE</span>
+        </div>
+
+        <div class="details">
+          <p class="number">Certificate 01</p>
+          <h2>Online Seminar Certificate </h2>
+          <p class="description">Course completion certificate</p>
+          <a class="open-pdf" href="certificates/onlineseminar1.pdf"
+            target="_blank" rel="noopener noreferrer">
+            View Certificate
+            <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M7 17 17 7M7 7h10v10"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+      </section>
+
+      <article class="certificate">
+        <div class="file-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.7">
+            <path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/>
+            <path d="M14 3v6h5M8 14h8M8 17h8"/>
+          </svg>
+          <span>PDF FILE</span>
+        </div>
+
+        <div class="details">
+          <p class="number">Certificate 02</p>
+          <h2>DICT Certificate </h2>
+          <p class="description">Course completion certificate</p>
+          <a class="open-pdf" href="certificates/onlineseminar2.pdf"
+            target="_blank" rel="noopener noreferrer">
+            View Certificate
+            <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M7 17 17 7M7 7h10v10"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <p class="note">
+      If a certificate does not open, make sure its PDF file is
+      inside the <strong>certificates</strong> folder.
+    </p>
+  </main>
+</body>
+</html>
